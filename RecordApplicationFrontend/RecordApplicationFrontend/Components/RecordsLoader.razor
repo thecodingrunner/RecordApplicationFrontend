@@ -1,5 +1,5 @@
 ﻿@using RecordApplication.Entities
-<h3>RecordsLoader</h3>
+@rendermode InteractiveServer
 
 @if (albums != null)
 {
@@ -31,6 +31,7 @@
 
             if (response != null)
             {
+                Console.WriteLine(response);
                 albums = response;
             }
         }

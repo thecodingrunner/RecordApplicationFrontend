@@ -1,11 +1,14 @@
 ﻿@using RecordApplication.Entities
 
-<article>
+<article class="record-card">
 	<h3>@album.AlbumName</h3>
 	<h4>@album.ArtistName</h4>
 	<p>Release Year: @album.ReleaseYear</p>
 	<p>Genre: @album.Genre</p>
 	<p>Description: @album.Description</p>
+	<img src="@album.CoverUrl" width="300" />
+	<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/@album.SpotifyUrl.Split('/').Last()?utm_source=generator"
+			width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </article>
 
 
