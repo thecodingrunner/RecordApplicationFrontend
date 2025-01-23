@@ -1,14 +1,18 @@
 ﻿@using RecordApplication.Entities
 
 <article class="record-card">
-	<h3>@album.AlbumName</h3>
-	<h4>@album.ArtistName</h4>
-	<p>Release Year: @album.ReleaseYear</p>
-	<p>Genre: @album.Genre</p>
-	<p>Description: @album.Description</p>
-	<img src="@album.CoverUrl" width="300" />
-	<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/@album.SpotifyUrl.Split('/').Last()?utm_source=generator"
-			width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	<div class="record_header">
+		<h3>@album.AlbumName</h3>
+		<h4>@album.ArtistName</h4>
+	</div>
+	<div class="record_info">
+		<p><strong>Release Year:</strong> @album.ReleaseYear</p>
+		<p><strong>Genre:</strong> @album.Genre</p>
+		<p><strong>Description:</strong> @album.Description</p>
+	</div>
+	<img src="@album.CoverUrl" class="record_cover" />
+	<iframe style="border-radius:10px" src="https://open.spotify.com/embed/track/@album.SpotifyUrl.Split('/').Last()?utm_source=generator"
+			width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </article>
 
 

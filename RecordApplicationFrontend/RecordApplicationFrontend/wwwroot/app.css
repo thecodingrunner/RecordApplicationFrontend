@@ -29,13 +29,38 @@ h1:focus {
 }
 
 .record-card {
-    
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .record-list {
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-
-
 }
+
+.record_header {
+    text-align: center;
+}
+
+.record_header h3 {
+    margin: 0.8rem;
+}
+
+.record_header h4 {
+    margin: 0.7rem;
+}
+
+.record_info p {
+    margin: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.record_cover {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+}
+
