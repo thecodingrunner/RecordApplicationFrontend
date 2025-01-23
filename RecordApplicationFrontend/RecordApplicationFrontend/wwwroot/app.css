@@ -29,16 +29,33 @@ h1:focus {
 }
 
 .record-card {
-    box-shadow: 0px 0px 10px black;
+    color: white;
     padding: 10px;
     border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-family: monospace;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .record-list {
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(0,0,0,0.9);
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+/*    background-color: darkgreen;*/
+    background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 .record_header {
@@ -47,10 +64,12 @@ h1:focus {
 
 .record_header h3 {
     margin: 0.8rem;
+    font-size: 1.4rem;
 }
 
 .record_header h4 {
     margin: 0.7rem;
+    font-size: 1.1rem;
 }
 
 .record_info p {
@@ -64,3 +83,28 @@ h1:focus {
     margin: 10px auto;
 }
 
+.body {
+    background-color: rgb(29, 185, 84);
+}
+
+.navbar a {
+    color: white;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px;
+}
