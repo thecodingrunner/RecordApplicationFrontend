@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordApplicationFrontend", "RecordApplicationFrontend\RecordApplicationFrontend\RecordApplicationFrontend.csproj", "{FC542C9A-98BD-4279-AB3C-2B65142C868B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordApplicationFrontend.Client", "RecordApplicationFrontend\RecordApplicationFrontend.Client\RecordApplicationFrontend.Client.csproj", "{00F0D75B-DABD-4846-A57F-D8DE1A192BC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC542C9A-98BD-4279-AB3C-2B65142C868B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC542C9A-98BD-4279-AB3C-2B65142C868B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC542C9A-98BD-4279-AB3C-2B65142C868B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC542C9A-98BD-4279-AB3C-2B65142C868B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F0D75B-DABD-4846-A57F-D8DE1A192BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F0D75B-DABD-4846-A57F-D8DE1A192BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F0D75B-DABD-4846-A57F-D8DE1A192BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F0D75B-DABD-4846-A57F-D8DE1A192BC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CB3A298-1C9D-4417-8E23-71016F7CFE64}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿@using RecordApplication.Entities
+
+<article>
+	<h3>@album.AlbumName</h3>
+	<h4>@album.ArtistName</h4>
+	<p>Release Year: @album.ReleaseYear</p>
+	<p>Genre: @album.Genre</p>
+	<p>Description: @album.Description</p>
+</article>
+
+
+@code {
+	// Album album = new Album("Cheat Codes", 1, "Danger Mouse", 2022, 3, Genre.HipHop, "Featuring Black Thought");
+
+	[Parameter]
+	public Album? album { get; set; }
+}

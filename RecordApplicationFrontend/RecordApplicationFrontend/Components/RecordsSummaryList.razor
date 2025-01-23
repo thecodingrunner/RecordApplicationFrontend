@@ -1,0 +1,22 @@
+﻿@using RecordApplication.Entities
+<h3>RecordsSummaryList</h3>
+
+<div>
+	@foreach (Album album in albums)
+	{
+		<RecordSummary album="album" />
+	}
+</div>
+
+
+
+@code {
+	// List<Album> albums = new List<Album>()
+	// {
+	// 	new Album("Cheat Codes", 1, "Danger Mouse", 2022, 3, Genre.HipHop, "Featuring Black Thought"),
+	// 	new Album("Cheat Codes", 2, "Danger Mouse", 2022, 3, Genre.HipHop, "Featuring Black Thought")
+	// };
+
+	[Parameter]
+	public List<Album> albums { get; set; }
+}

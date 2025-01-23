@@ -1,0 +1,42 @@
+﻿@using RecordApplication.Entities
+<h3>RecordsLoader</h3>
+
+@if (albums != null)
+{
+    <RecordsSummaryList albums="albums" />
+} else if (errorMessage != null)
+{
+    <div>
+        We faced an error when loading the records: @errorMessage
+    </div>
+} else
+{
+    <div>
+        Loading records...
+    </div>
+}
+
+@code {
+    private List<Album> albums;
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var http = new HttpClient();
+
+            var response = await http.GetFromJsonAsync<List<Album>>(
+                $"https://localhost:7165/albums");
+
+            if (response != null)
+            {
+                albums = response;
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"An error occurred: {ex.Message}";
+        }
+    }
+}
